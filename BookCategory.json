@@ -1,0 +1,128 @@
+{
+    "Web": {
+        "1": [
+            "Serverless Web Applications with React and Firebase",
+            "svr.jpg"
+        ],
+        "2": [
+            "Learning Web Design - A Beginner’s Guide to HTML, CSS, JavaScript, and Web Graphics",
+            "webdesign.jpg"
+        ],
+        "3": [
+            "Vue.js 2 Web Development Projects Learn Vue.js by building 6 web apps",
+            "vue.jpg"
+        ],
+        "4": [
+            "JavaScript The Definitive Guide Master the World's Most-Used Programming Language",
+            "js.jpg"
+        ],
+        "5": [
+            "Modern Full-Stack Development Using TypeScript, React, Node.js, Webpack, and Docker",
+            "full stack.jpg"
+        ],
+        "6": [
+            "Practical Node.js Building Real-World Scalable Web Apps",
+            "pnodejs.jpg"
+        ]
+    },
+    "ML & AI": {
+        "7": [
+            "Machine Learning Using Python",
+            "MLPy.jpg"
+        ],
+        "8": [
+            "Machine Learning Make Your Own Recommender System",
+            "RecSys.jpg"
+        ],
+        "9": [
+            "Machine learning for Absolute beginners",
+            "mlintro.jpg"
+        ],
+        "10": [
+            "The Hundred-Page Machine Learning Book",
+            "HPMLB.jpg"
+        ],
+        "11": [
+            "DEEP LEARNING with Python",
+            "deep learning.jpg"
+        ]
+    },
+    "Languages": {
+        "12": [
+            "Java A Beginner’s Guide Eighth Edition",
+            "Java.jpg"
+        ],
+        "13": [
+            "Head First Kotlin A Brain-Friendly Guide",
+            "kotlin.jpg"
+        ],
+        "14": [
+            "Learn Python 3 the Hard Way",
+            "cover.jpg"
+        ],
+        "15": [
+            "C hash Programming in easy steps",
+            "C hash programming.jpg"
+        ],
+        "16": [
+            "Introduction to C++ Programming Concepts and Applications",
+            "introtocpp.jpg"
+        ],
+        "17": [
+            "Beginning Ruby From Novice to Professional",
+            "ruby.jpg"
+        ]
+    },
+    "Data Structures and Algorithms": {
+        "18": [
+            "Data Structures using C",
+            "datastructures.jpg"
+        ],
+        "19": [
+            "40 Algorithms Every Programmer should know",
+            "40algos.jpg"
+        ],
+        "20": [
+            "Design and Analysis of Data Structures",
+            "DAdataStructures.jpg"
+        ],
+        "21": [
+            "Introduction to the Design and Analysis of Algorithms",
+            "introtoDAA.jpg"
+        ],
+        "22": [
+            "Analysis And Design of Algorithms",
+            "ADA.jpg"
+        ],
+        "23": [
+            "Learning Algorithms Through Programming and Puzzle Solving",
+            "LATPPS.jpg"
+        ]
+    },
+    "Data Science": {
+        "24": [
+            "Data Analytics using Python",
+            "DataanalyticsPy.jpg"
+        ],
+        "25": [
+            "Essentials of R for Data Analytics",
+            "Rdataanalytics.jpg"
+        ],
+        "26": [
+            "Data Science Stratagies for dummies",
+            "DSforDummies.jpg"
+        ],
+        "27": [
+            "Data Science Projects With Python",
+            "DSPpy.jpg"
+        ],
+        "28": [
+            "Python Data Science Handbook",
+            "DShandbookPy.jpg"
+        ],
+        "29": [
+            "Data Analytics with R",
+            "Data Analytics with R.jpg"
+        ]
+    }
+}

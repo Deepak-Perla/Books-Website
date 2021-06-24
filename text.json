@@ -1,0 +1,205 @@
+{
+    "1": {
+        "title": "Serverless Web Applications with React and Firebase",
+        "image": "Assets/Web/Serverless Web Applications with React and Firebase/svr.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "2": {
+        "title": "Learning Web Design - A Beginner’s Guide to HTML, CSS, JavaScript, and Web Graphics",
+        "image": "Assets/Web/Learning Web Design - A Beginner’s Guide to HTML, CSS, JavaScript, and Web Graphics/webdesign.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "3": {
+        "title": "Vue.js 2 Web Development Projects Learn Vue.js by building 6 web apps",
+        "image": "Assets/Web/Vue.js 2 Web Development Projects Learn Vue.js by building 6 web apps/vue.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "4": {
+        "title": "JavaScript The Definitive Guide Master the World's Most-Used Programming Language",
+        "image": "Assets/Web/JavaScript The Definitive Guide Master the World's Most-Used Programming Language/js.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "5": {
+        "title": "Modern Full-Stack Development Using TypeScript, React, Node.js, Webpack, and Docker",
+        "image": "Assets/Web/Modern Full-Stack Development Using TypeScript, React, Node.js, Webpack, and Docker/full stack.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "6": {
+        "title": "Practical Node.js Building Real-World Scalable Web Apps",
+        "image": "Assets/Web/Practical Node.js Building Real-World Scalable Web Apps/pnodejs.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "7": {
+        "title": "Machine Learning Using Python",
+        "image": "Assets/ML & AI/Machine Learning Using Python/MLPy.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "8": {
+        "title": "Machine Learning Make Your Own Recommender System",
+        "image": "Assets/ML & AI/Machine Learning Make Your Own Recommender System/RecSys.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "9": {
+        "title": "Machine learning for Absolute beginners",
+        "image": "Assets/ML & AI/Machine learning for Absolute beginners/mlintro.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "10": {
+        "title": "The Hundred-Page Machine Learning Book",
+        "image": "Assets/ML & AI/The Hundred-Page Machine Learning Book/HPMLB.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "11": {
+        "title": "DEEP LEARNING with Python",
+        "image": "Assets/ML & AI/DEEP LEARNING with Python/deep learning.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "12": {
+        "title": "Java A Beginner’s Guide Eighth Edition",
+        "image": "Assets/Languages/Java A Beginner’s Guide Eighth Edition/Java.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "13": {
+        "title": "Head First Kotlin A Brain-Friendly Guide",
+        "image": "Assets/Languages/Head First Kotlin A Brain-Friendly Guide/kotlin.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "14": {
+        "title": "Learn Python 3 the Hard Way",
+        "image": "Assets/Languages/Learn Python 3 the Hard Way/cover.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "15": {
+        "title": "C# Programming in easy steps",
+        "image": "Assets/Languages/C# Programming in easy steps/C# programming.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "16": {
+        "title": "Introduction to C++ Programming Concepts and Applications",
+        "image": "Assets/Languages/Introduction to C++ Programming Concepts and Applications/introtocpp.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "17": {
+        "title": "Beginning Ruby From Novice to Professional",
+        "image": "Assets/Languages/Beginning Ruby From Novice to Professional/ruby.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "18": {
+        "title": "Data Structures using C",
+        "image": "Assets/Data Structures and Algorithms/Data Structures using C/datastructures.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "19": {
+        "title": "40 Algorithms Every Programmer should know",
+        "image": "Assets/Data Structures and Algorithms/40 Algorithms Every Programmer should know/40algos.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "20": {
+        "title": "Design and Analysis of Data Structures",
+        "image": "Assets/Data Structures and Algorithms/Design and Analysis of Data Structures/DAdataStructures.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "21": {
+        "title": "Introduction to the Design and Analysis of Algorithms",
+        "image": "Assets/Data Structures and Algorithms/Introduction to the Design and Analysis of Algorithms/introtoDAA.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "22": {
+        "title": "Analysis And Design of Algorithms",
+        "image": "Assets/Data Structures and Algorithms/Analysis And Design of Algorithms/ADA.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "23": {
+        "title": "Learning Algorithms Through Programming and Puzzle Solving",
+        "image": "Assets/Data Structures and Algorithms/Learning Algorithms Through Programming and Puzzle Solving/LATPPS.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "24": {
+        "title": "Data Analytics using Python",
+        "image": "Assets/Data Science/Data Analytics using Python/DataanalyticsPy.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "25": {
+        "title": "Essentials of R for Data Analytics",
+        "image": "Assets/Data Science/Essentials of R for Data Analytics/Rdataanalytics.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "26": {
+        "title": "Data Science Stratagies for dummies",
+        "image": "Assets/Data Science/Data Science Stratagies for dummies/DSforDummies.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "27": {
+        "title": "Data Science Projects With Python",
+        "image": "Assets/Data Science/Data Science Projects With Python/DSPpy.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "28": {
+        "title": "Python Data Science Handbook",
+        "image": "Assets/Data Science/Python Data Science Handbook/DShandbookPy.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    },
+    "29": {
+        "title": "Data Analytics with R",
+        "image": "Assets/Data Science/Data Analytics with R/Data Analytics with R.jpg",
+        "description": "Description",
+        "downloadhref": "https://www.google.com",
+        "webviewhref": "https://www.google.com"
+    }
+}

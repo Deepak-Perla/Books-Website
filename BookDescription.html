@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Description</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.svg"/>
+    <script src="BookDescription.js"></script>
+    <link rel="stylesheet" href="BookDescription.css">
+</head>
+
+
+
+
+<body style="margin:0px;padding:0px;">
+    <div class="NavigationBar">
+        <!-- Navigation Bar -->
+        <p style="padding-left: 5%;">
+            <a href="index.html">
+                Home
+            </a>
+            </p>        
+        <p style="padding-left: 4%;">
+            <a href="contact.html">
+                About
+            </a>
+            </p>
+            <p style="padding-left: 4%;">
+                <a href="index.html#Share">
+                    Share
+                </a>
+                </p>
+        <p style="padding-left: 4%;">
+            <a href="Payment.html">
+            Donate
+            </a>
+        </p>
+        <!-- <img style="position:absolute;right: 5%" src="images/Search.svg" alt="Search"> -->
+    </div>
+
+    <div id="NotFound">
+
+    <div class="Title">
+        <span><input type="image" onclick="goBack()" class="BackButton" src="images/Back.svg" alt="back"> </span>
+        <p id="Title"> 
+            <!-- Title     -->
+        </p>
+    </div>
+
+    <div class="ImageText">
+        <div class="BookImageDiv">
+            <img class="BookImage" id="Image" alt="Book Image">  <!-- Book source  -->
+            <p class="Heart" id="Heart" onclick="HeartToggle()">🤍</p>
+        </div>
+
+        <p id="Description" style="padding-right: 5%;margin-left: auto;margin-top:4%;padding-left:5%">
+            <!-- Text Description -->
+        </p>
+    </div>
+
+
+    <section id="section10" class="demo">
+        <a href="#Buttons"><span></span></a>
+      </section>
+
+
+    <div class="Buttons" id="Buttons">
+        <!-- Download href -->
+        <a id="Download">
+            <img src="images/Buttons/Download.svg" alt="Download">
+        </a>
+        <!-- Web View href -->
+        <a id="WebView">
+            <img style="margin-left: 5%;" src="images/Buttons/WebView.svg" alt="Web View">
+        </a>
+        
+    </div>
+    </div>
+
+    <br><br><br><br><br>
+</body>
+
+
+</html>

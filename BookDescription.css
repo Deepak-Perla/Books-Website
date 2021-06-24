@@ -1,0 +1,190 @@
+html {
+  scroll-behavior: smooth;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.NavigationBar a:hover {
+        color: purple;
+        cursor: pointer;
+        padding-bottom: 3px;
+        border-bottom: 3px solid purple; 
+}
+.NavigationBar{
+    position: fixed;
+    width: 100%;
+    height: 44px;
+    z-index: 2;
+    /* left: calc(50% - 103px/2); */
+    top: 0%;
+    /* Headline 4 */
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 92px;
+    padding-top: 0.1em;
+    /* or 613% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    background-image: url("images/gradientBackgroundNavigation-3.svg");
+    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    /* White */
+    color: #FFFFFF;
+    text-decoration-style: solid;
+    text-rendering: auto;
+}
+.BackButton{
+    display: flex;
+    position: absolute;
+    padding: 5px;
+    left: 3%;
+    border-radius: 1000px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.BackButton:hover{
+    background-color: rgb(214, 214, 214);
+    /* opacity: 0.1; */
+    background-blend-mode: color-burn;
+}
+
+
+.Title{
+    height: auto;
+    margin-left: 10%;
+    margin-right: 8%;
+    margin-top: 5%;
+    margin-bottom: -3%;
+    /* position: relative; */
+    z-index: 10;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3em;
+    text-align: center;
+
+    color: rgba(100, 100, 100, 0.81);
+
+}
+
+.ImageText{
+
+    /* position: absolute; */
+    /* width: 767px; */
+    /* height: 354px; */
+    /* left: 608px; */
+    /* top: 290px; */
+    /* float: left; */
+    display: flex;
+    /* padding-top: 2%; */
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+    /* or 167% */
+    letter-spacing: 0.1em;
+
+    color: #050505;
+}
+
+.Heart{
+  /* position: relative;
+  top: -100px; */
+  position: relative;
+  /* display: block; */
+  text-align: center;
+  /* padding: 2px 6px; */
+  margin-top: -400px;
+  margin-left: 245.5px;
+  margin-right: 10px;
+  /* width: 35px; */
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; 
+  user-select: none;
+  border-radius: 10px;
+  background-color: rgb(156, 156, 156);
+}
+
+
+.BookImageDiv{
+    /* display: block; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top:2.2em;
+    padding-left:2.8em;
+    padding-right:2.4em;
+    padding-bottom:2.8em;
+    background-image: url("images/Books/Book-Test.jpg");
+}
+
+.BookImage{
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+
+#section10 a {
+    padding-top: 10px;
+  }
+#section10 a span {
+    position: absolute;
+    top: 74%;
+    left: 30%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid gray;
+    border-radius: 50px;
+    box-sizing: border-box;
+  }
+#section10 a span::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: gray;
+    border-radius: 100%;
+    animation: sdb10 2s infinite;
+    box-sizing: border-box;
+  }
+  @keyframes sdb10 {
+    0% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+
+
+
+.Buttons{
+    padding-left: 35%;
+    margin-left: 5%;
+
+}

@@ -1,0 +1,301 @@
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="Author" content="blog.sombex.com">
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  $(function() {
+
+var deg = 0;
+var rotate = 1;
+var club_rotate = setInterval(club_rotate, 30);
+$('.circle-item > li').not(".circle-item > *:nth-of-type(8)").mouseenter(function() {
+    rotate = 0
+});
+$('.circle-item > li').not(".circle-item > *:nth-of-type(8)").mouseleave(function() {
+    rotate = 1
+});
+function club_rotate() {
+    if (rotate == 0) {
+        return
+    }
+    deg = get_deg(deg + 1);
+    var deg0 = deg;
+    var $data = $('.circle-item').children().not(".circle-item > *:nth-of-type(8)");
+    var length = 13;
+    if ($(window).width() <= 540) {
+        length = 9
+    }
+    $data.each(function() {
+        $(this).css("-webkit-transform", "rotate(" + deg0 + "deg) translate(" + length + "em) rotate(-" + deg0 + "deg)").css("transform", "rotate(" + deg0 + "deg) translate(" + length + "em) rotate(-" + deg0 + "deg)");
+        deg0 = get_deg(deg0 + 51)
+    })
+}
+
+function get_deg(deg0) {
+    if (deg0 > 360)
+        return (deg0 - 360);
+    else return deg0
+}
+});
+
+</script>
+  </head>
+  <body>
+<style>
+  body {
+  background: linear-gradient(152deg, rgba(17,29,94,1) 0%, rgba(199,0,57,1) 38%, rgba(243,113,33,1) 60%, rgba(192,226,24,1) 98%);
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .circle-container{
+         width: 26em;
+         height: 26em;
+         margin: 15em auto;
+  }
+  .circle-item {
+    list-style: none;
+    }
+  .circle-item > li > img {
+       display: block;
+       position: absolute;
+       top: 50%;
+       left: -155%;
+       width: 10em;
+       height: 10em;
+       border-radius: 50%;
+       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+       -webkit-transition: .15s;
+       transition: .15s;
+    }
+  
+  .circle-item img:hover {
+      box-shadow: 0 4px 8px 0 tomato;
+  }
+  
+  .circle-item > li:last-child > img{width:15em;height:15em;} .circle-item + h2 {padding-bottom:45px;text-align:center;}
+  
+  
+  .circle-item > *:nth-of-type(1) {
+            transform: rotate(102deg) translate(13em) rotate(-102deg);
+  }
+  
+  
+  .circle-item > *:nth-of-type(2) {
+            transform: rotate(204deg) translate(13em) rotate(-204deg);
+  }
+  
+  
+  .circle-item > *:nth-of-type(3) {
+            transform: rotate(306deg) translate(13em) rotate(-306deg);
+  }
+  
+      
+      .container{
+         margin:50px;
+         width:250px;
+         height:250px;
+         border-radius:50%;
+         background: rgb(124,12,75);
+      }
+      .item > img{
+         display: block;
+         position:absolute;
+         top: 175px;
+         left: 175px;
+         width : 60px;
+         height : 60px;
+         border-radius:50%;
+         margin: -30px;
+       }
+       
+      .deg1{
+      transform : rotate(45deg) ;
+      }
+      
+      .deg2{
+          transform : rotate(45deg) translate(125px);
+  }
+      .deg3{
+          transform : rotate(45deg) translate(125px) rotate(-45deg);
+  }
+      
+  form h1 {
+    font-size: 18px;
+    background: #F6AA93 none repeat scroll 0% 0%;
+    color: rgb(255, 255, 255);
+    padding: 22px 25px;
+    border-radius: 5px 5px 0px 0px;
+    margin: auto;
+    text-shadow: none; 
+    text-align:left
+  }
+  
+  form {
+    border-radius: 5px;
+    max-width:700px;
+    width:100%;
+    margin: 5% auto;
+    background-color: #FFFFFF;
+    overflow: hidden;
+  }
+  
+  p span {
+    color: #F00;
+  }
+  
+  p {
+    margin: 0px;
+    font-weight: 500;
+    line-height: 2;
+    color:#333;
+  }
+  
+  
+  input {
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #eee;
+    margin-bottom: 15px;
+    width: 75%;
+    height: 40px;
+    float: left;
+    padding: 0px 15px;
+  }
+  
+  a {
+    text-decoration:inherit
+  }
+  
+  textarea {
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #EEE;
+    margin: 0;
+    width: 75%;
+    height: 130px; 
+    float: left;
+    padding: 0px 15px;
+  }
+  
+  .form-group {
+    overflow: hidden;
+    clear: both;
+  }
+  
+  .icon-case {
+    width: 35px;
+    float: left;
+    border-radius: 5px 0px 0px 5px;
+    background:#eeeeee;
+    height:42px;
+    position: relative;
+    text-align: center;
+    line-height:40px;
+  }
+  
+  i {
+    color:#555;
+  }
+  
+  .contentform {
+    padding: 40px 30px;
+  }
+  
+  .button-contact{
+    background-color: #81BDA4;
+    color: #FFF;
+    text-align: center;
+    width: 100%;
+    border:0;
+    padding: 17px 25px;
+    border-radius: 0px 0px 5px 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    font-size: 18px;
+  }
+  
+  .validation {
+    display:none;
+    margin: 0 0 10px;
+    font-weight:400;
+    font-size:13px;
+    color: #DE5959;
+  }
+  
+  #sendmessage {
+    border:1px solid #fff;
+    display:none;
+    text-align:center;
+    margin:10px 0;
+    font-weight:600;
+    margin-bottom:30px;
+    background-color: #EBF6E0;
+    color: #5F9025;
+    border: 1px solid #B3DC82;
+    padding: 13px 40px 13px 18px;
+    border-radius: 3px;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.03);
+  }
+  
+  #sendmessage.show,.show  {
+    display:block;
+  }
+</style>
+    <div class = "circle-container" style = "display:block;">
+ <ul class="circle-item">
+	  <li></li>
+	  <li></li>
+	  <li><img src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"></li>
+	  <li></li>
+   <li></li>
+	  <li><img src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"></li>
+	  <li></li>
+   <li></li>
+	  <li><img src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"></li>
+	  <li></li>
+   <li></li>
+	 </ul>
+      
+      <form style="position:relative; left:370px; top: -170px;"> 
+              <h1>Any queries, reach us by filling the form ✌</h1>
+              
+          <div class="contentform">
+              <div id="sendmessage"> Your message has been sent successfully. Thank you. </div>
+                  
+      <div class="form-group">
+      <p>Name <span>*</span></p>
+      <span class="icon-case"><i class="fa fa-user"></i></span>
+      <input type="text" name="prenom" id="prenom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Prénom' doit être renseigné."/>
+      <div class="validation"></div>
+                  </div>
+      
+      <div class="form-group">
+      <p>E-mail <span>*</span></p>	
+      <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
+      <input type="email" name="email" id="email" data-rule="email" data-msg="Vérifiez votre saisie sur les champs : Le champ 'E-mail' est obligatoire."/>
+      <div class="validation"></div>
+                  </div>	
+       
+          
+      <div class="form-group">
+      <p>Message <span>*</span></p>
+      <span class="icon-case"><i class="fa fa-comments-o"></i></span>
+      <textarea name="message" rows="14" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Message' doit être renseigné."></textarea>
+                      <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" class="button-contact">Send 🚀</button>
+                    <div class="validation"></div>
+                 </div> 	
+          </div>
+          </div>
+     
+      </form>	
+    </div> 
+
+    <div class = "container" style="display:none">
+    <div class = "item">
+     
+    </div>
+    </div>
+  </body>
+</html>

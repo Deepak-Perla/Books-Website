@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Home</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.svg"/>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .NavigationBar a:hover {
+            color: purple;
+            cursor: pointer;
+            padding-bottom: 3px;
+            border-bottom: 3px solid purple; 
+        }
+
+        .BooksTextAnimation{
+            color: gray;
+            opacity: 0.9;
+            /*-webkit-text-stroke: 0.1vw #383d52;*/
+            /*text-transform: uppercase;*/
+        }
+        
+        .BooksTextAnimation::before{
+            content: "Books..";
+            position: absolute;
+            top: 10;
+            left: 9.9;
+            width: 0%;
+            -webkit-text-stroke: 0.1vw #BF4EB1;
+            color: #BF4EB1;
+            border-right: 4px solid #BA9DB1;
+            /*#01fe87*/
+            overflow: hidden;
+            animation: animate 4s normal infinite;
+        }
+
+        @keyframes animate{
+            0%,10%,100%{
+                width:0%;
+            }
+            50%,70%{
+                width:40%;
+            }
+        }
+
+        .Main {
+            position: relative;
+            background-image: url("images/gradientBackground.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin: 0px;
+            padding: 0px;
+            scroll-behavior: smooth;
+        }
+
+        .PDFImage {
+            position: absolute;
+            right: 0px;
+            width: 33%;
+            height: auto;
+            top: 2.5em;
+            will-change: transform;
+            transition: transform 250ms;
+            transition-timing-function: ease-out;
+        }
+
+        .PDFImage:hover {
+            /* transition: transform 250ms; */
+            transform: scale(1.2);
+        }
+
+        .NavigationBar {
+            position: fixed;
+            width: 100%;
+            height: 44px;
+            z-index: 2;
+            /* left: calc(50% - 103px/2); */
+            top: 0%;
+            /* Headline 4 */
+            font-family: Helvetica Neue;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 92px;
+            padding-top: 0.1em;
+            /* or 613% */
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            background-image: url("images/gradientBackgroundNavigation.svg");
+
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+            /* White */
+            color: #FFFFFF;
+            text-decoration-style: solid;
+            text-rendering: auto;
+        }
+
+        .Heading {
+            position: relative;
+            width: 60%;
+            height: 10%;
+            left: 8%;
+            top: 0.4em;
+
+            font-family: Helvetica Neue;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 600%;
+            line-height: 125%;
+            /* letter-spacing: -0.04em; */
+            color: #393939;
+        }
+
+        .SubText {
+            position: relative;
+            width: 35%;
+            height: 5%;
+            left: 9%;
+            top: -1em;
+            font-family: Helvetica Neue;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 100%;
+            line-height: 200%;
+            color: #425466;
+
+            mix-blend-mode: luminosity;
+        }
+
+        .Buttons {
+            padding-left: 9%;
+            
+        }
+
+        .pushable {
+            background: hsl(340deg 10% 22%);
+            border-radius: 30px;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            outline-offset: 4px;
+        }
+
+        .front {
+            display: block;
+            padding: 6px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            background: hsl(345deg 0% 40%);
+            color: white;
+            transform: translateY(-4px);
+            will-change: transform;
+            transition: transform 250ms;
+        }
+
+        .pushable:focus:not(:focus-visible) {
+         outline: none;
+        }
+
+        .pushable:hover .front{
+            transform: translateY(-6px);
+        }
+
+        .pushable:active .front {
+            transform: translateY(-2px);
+        }
+
+        .Review {
+            /* columns: 5; */
+            /* width: 25%; */
+            display: flex;
+            /* align-items: center; */
+            /* column-gap: 10%; */
+            justify-content: space-evenly;
+            padding-top: 12em;
+        }
+
+        .Person {
+            position: relative;
+            display: flex;
+            margin-top: -200px;
+            /* column-gap: 40%; */
+            justify-content: space-between;
+            /* padding: 20em; */
+        }
+
+        .AboutUs {
+            columns: 2;
+            column-gap: 0px;
+            margin: auto;
+        }
+
+        .AboutUsText {
+            /* margin: 20px; */
+            background-color: rgb(199, 199, 199);
+            border-radius: 10mm;
+            /* border: black; */
+        }
+
+        .contact {
+            position: absolute;
+            display: flex;
+            right: 5%;
+            padding-top: 6%;
+        }
+
+        .contact a{
+            padding-top: 11.5%;
+        }
+
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://gitcdn.xyz/repo/pi0/clippyjs/master/assets/clippy.css">
+</head>
+
+<body class="Main">
+
+    <div class="NavigationBar">
+        <!-- Navigation Bar -->
+        <p style="padding-left: 5%;">
+            <a href="index.html">
+                Home
+            </a>
+        </p>
+        <p style="padding-left: 4%;">
+            <a href="contact.html">
+                About
+            </a>
+        </p>
+        <p style="padding-left: 4%;">
+            <a href="#Share">
+                Share
+            </a>
+        </p>
+        <p style="padding-left: 4%;">
+            <a href="Payment.html">
+                Donate
+            </a>
+        </p>
+        <!-- <img style="position:absolute;right: 5%" src="images/Search.svg" alt="Search"> -->
+    </div>
+
+    <img class="PDFImage" src="images/GroupDigitalNotes-2.png" alt="Notes Picture">
+
+    <p class="Heading">
+        Get <br>All The <span class="BooksTextAnimation">Books..</span> <br>You Need
+    </p>
+    <p class="SubText">
+        A place where you can find E-Copies of CS books.
+        <br>Save money by reading from PDF’s
+    </p>
+
+    <a href="BookCategory.html">
+    <div class="Buttons">
+            <button class="pushable">
+                <span class="front">
+                    Start now
+                </span>
+            </button>
+        </div>
+    </a>
+
+
+    <div id="About" class="Review">
+        <p></p>
+        <img style="background-image:url(images/Review-1.jpg);" src="images/Review-1.svg" alt="Review">
+        <img style="background-image:url(images/Review-2.jpg);" src="images/Review-2.svg" alt="Review">
+        <p></p>
+    </div>
+
+    <div class="Person">
+        <img src="images/Person-1.svg" alt="Review">
+
+        <div style="margin-top:20em;margin-bottom: 10em;display:flex;background-color: rgb(245, 237, 237);
+            padding: 2em;
+            border: 10px solid rgb(170, 135, 135);
+            border-radius: 100px;
+            ">
+
+            <img style="width:100px;height:150px;margin-top: 1em" src="images/Character/Person.webp" alt="Person">
+            <!-- <svg width="85" height="78" viewBox="0 0 95 95" fill="none" preserveAspectRatio="none"><path d="M0 0C0 0 24.8936 38.9937 47 58C57.5966 67.1106 73.8292 77.0249 84.1762 83C90.03 86.3804 94 95 94 95L94.5 36C94.5 36 88.5727 43.1045 81 41.4825C70.8874 39.3165 56.9488 35.8549 47 31.5C26.7586 22.6397 0 0 0 0Z" fill="gray"></path></svg>                  -->
+            <div>
+                <p style="font-family: Neuton;
+                margin-top: -0.5em;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 28px;">About Us</p>
+                <p style="font-family: Neuton;
+               /* padding-right: 0.5em; */
+               margin-top: -0.6em;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1.4em;
+                line-height: 1.3em;">
+                    &nbsp; We are a team from BMU Web programming course.<br>
+                    &nbsp; This project is started as a part of our Course Assignment🎃.<br>
+                    &nbsp; We wish to make it a huge portal for students.<br>
+                    &nbsp; Feel free to share your thoughts, contact us Anytime 💩.<br>
+                </p>
+            </div>
+        </div>
+
+
+        <img src="images/Person-2.svg" alt="Review">
+    </div>
+
+    <img style="float: right;" src="images/ContactInfoBackground.svg" alt="Contact Background">
+
+    <div id="Share" class="contact">
+        <p style="font-family: Helvetica Neue;font-size: 20px;line-height: 92px;letter-spacing: 0.1em;">
+            Share: &nbsp;
+        </p>
+        <a href="https://www.google.com"><img src="images/Social Icons/Instagram.svg" alt="Instagram"></a>
+        <a href="https://www.google.com"><img src="images/Social Icons/Twitter.svg" alt="Twitter"></a>
+        <a href="https://www.google.com"><img src="images/Social Icons/YouTube.svg" alt="YouTube"></a>
+        <a href="https://www.google.com"><img src="images/Social Icons/Facebook.svg" alt="Facebook"></a>
+        <a href="https://www.google.com"><img src="images/Social Icons/Linkedin.svg" alt="Linkedin"></a>
+    </div>
+
+</body>
+
+
+
+</html>

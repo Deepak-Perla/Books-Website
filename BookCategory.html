@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Category</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.svg"/>
+    <link href="BookCategory.css" rel="stylesheet">
+    <script src="BookCategory.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="https://gitcdn.xyz/repo/pi0/clippyjs/master/assets/clippy.css"> -->
+</head>
+
+<body class="Main" style="margin:0px;padding:0px;">
+
+    <div class="NavigationBar">
+        <!-- Navigation Bar -->
+        <p style="padding-left: 5%;">
+            <a href="index.html">
+                Home
+            </a>
+        </p>
+        <p style="padding-left: 4%;">
+            <a href="contact.html">
+                About
+            </a>
+        </p>
+        <p style="padding-left: 4%;">
+            <a href="index.html#Share">
+                Share
+            </a>
+        </p>
+        <p style="padding-left: 4%;">
+            <a href="Payment.html">
+                Donate
+            </a>
+        </p>
+        <!-- <img style="position:absolute;right: 5%" src="images/Search.svg" alt="Search"> -->
+        <input id="Search" list="SearchDatabase" type="search" class="Search" onkeyup="Search()" placeholder="Search...." />
+    </div>
+
+    <datalist id="SearchDatabase">
+        <option value="ML"></option>
+        <option value="Java"></option>
+        <option value="Python"></option>
+        <option value="Deep Learning"></option>
+        <option value="Algorithms"></option>
+        <option value="Web"></option>
+        <option value="JavaScript"></option>
+        <option value="Data Structures"></option>
+        <option value="R"></option>
+        <option value="Data Science"></option>
+    </datalist>
+
+    <input type="image" onclick="goBack()" class="BackButton" src="images/Back.svg" alt="back">
+
+
+    <img class="Cover" id="Cover" src="images/Cover/cover1.jpg" alt="cover">
+
+    
+
+    <h1 id="CoverText" class="CoverText">Computer Science</h1>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="honeycomb">
+        <div class="ibws-fix">
+
+            <a class="hexagon" id="ML & AI" href="BookCategory.html?category=ML %26 AI">
+                <div class="hexagontent"> AI & ML</div>
+            </a>
+            <a class="hexagon" id="Data Science" href="BookCategory.html?category=Data Science">
+                <div class="hexagontent">Data Science</div>
+            </a>
+            <a class="hexagon" id="Languages" href="BookCategory.html?category=Languages">
+                <div class="hexagontent">Languages</div>
+            </a>
+            <a class="hexagon" id="Data Structures and Algorithms" href="BookCategory.html?category=Data Structures and Algorithms">
+                <div class="hexagontent">Algorithms</div>
+            </a>
+            <a class="hexagon" id="Web" href="BookCategory.html?category=Web">
+                <div class="hexagontent">Web Dev</div>
+            </a>
+            <a class="hexagon ClearFilter" href="BookCategory.html">
+                <div class="hexagontent">Clear Filter</div>
+            </a>
+
+        </div>
+    </div>
+    <!--
+    <table class="BooksTable" id="BooksTable">
+
+        <tr>
+            <td>
+                <div class="BookImageDiv">
+                    <a href="BookDescription.html?bookId=1">
+                        <img class="BookImage" src="
+            Assets/ML & AI/DEEP LEARNING with Python/deep learning.jpg" alt="Book Image">
+                    </a>
+                </div>
+            </td>
+            <td>
+                <div class="BookImageDiv">
+                    <a href="Machine learning for Absolute beginners.html">
+                        <img class="BookImage" src="
+            Assets/ML & AI/Machine learning for Absolute beginners/mlintro.jpg" alt="Book Image">
+                    </a>
+                </div>
+            </td>
+            <td>
+                <div class="BookImageDiv">
+                    <a href="Machine Learning Make Your Own Recommender System.html">
+                        <img class="BookImage" src="
+            Assets/ML & AI/Machine Learning Make Your Own Recommender System/RecSys.jpg" alt="Book Image">
+                    </a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="BookImageDiv">
+                    <a href="Machine Learning Using Python.html">
+                        <img class="BookImage" src="
+            Assets/ML & AI/Machine Learning Using Python/MLPy.jpg" alt="Book Image">
+                    </a>
+                </div>
+            </td>
+            <td>
+                <div class="BookImageDiv">
+                  <a href="The Hundred-Page Machine Learning Book.html">
+                        <img class="BookImage" src="
+            Assets/ML & AI/The Hundred-Page Machine Learning Book/HPMLB.jpg" alt="Book Image">
+                    </a>
+                </div>
+            </td>
+        </tr>
+
+    </table>
+-->
+
+<div class="CharacterDescription">
+    <p id="CharacterDescriptionText" class="CharacterDescriptionText">Get all the Computer Science books you need.
+        We are constantly adding new books.
+    </p>
+    <img  onclick="CharacterDescription()" class="CharacterDescriptionImage" src="images/CharacterDescription.png" alt="CharacterDescription">
+
+</div>
+    
+
+    <div class="BooksGrid" id="BooksGrid">
+
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+
+</body>
+<!-- 
+<script src="https://unpkg.com/jquery@3.2.1"></script>
+
+<script src="https://unpkg.com/clippyjs@latest"></script>
+
+<script type="text/javascript">
+    
+clippy.load('Genie', function(agent){
+    // Do anything with the loaded agent
+    agent.show();
+    agent.speak('Search all the Computer Science Books you need, We are constantly adding books.');
+});
+</script> -->
+
+</html>
